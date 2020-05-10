@@ -110,7 +110,8 @@ const deleteUser = (req, res) => {
   });
 };
 
-const deviceRouter = express.Router("api/v1/devices");
+const deviceRouter = express.Router();
+const userRouter = express.Router();
 
 deviceRouter.route("/").get(getAllDevices).post(createDevice);
 deviceRouter
@@ -119,13 +120,11 @@ deviceRouter
   .patch(updateDevice)
   .delete(deleteDevice);
 
-const userRouter = express.Router("/api/v1/users");
-
 userRouter.route("/").get(getAllUsers).post(createUser);
-userRouter.route("").get(getUser).patch(updateUser).delete(deleteUser);
+userRouter.route("/:id").get(getUser).patch(updateUser).delete(deleteUser);
 
-app.use(deviceRouter);
-app.use(userRouter);
+app.use("/api/v1/devices", deviceRouter);
+app.use("/api/v1/users", userRouter);
 
 const port = 3000;
 app.listen(port, () => {
