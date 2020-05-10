@@ -1,0 +1,24 @@
+{
+  "name": "smartlab",
+  "version": "1.0.0",
+  "description": "A software to manage smartphone repairs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dalex998/smartlab.git"
+  },
+  "keywords": [
+    "smartphones",
+    "repairs",
+    "management"
+  ],
+  "author": "Alexandru Duma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dalex998/smartlab/issues"
+  },
+  "homepage": "https://github.com/dalex998/smartlab#readme"
+}
