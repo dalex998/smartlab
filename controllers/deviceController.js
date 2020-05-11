@@ -4,6 +4,16 @@ const devices = JSON.parse(
   fs.readFileSync(`${__dirname}/../data/devices.json`)
 );
 
+exports.checkId = (req, res, next, val) => {
+  const device = devices.find((device) => device.id === val * 1);
+  if (!device)
+    return res.status(404).send({
+      status: "fail",
+      message: "Invalid device ID",
+    });
+  next();
+};
+
 exports.getAllDevices = (req, res) => {
   res.status(200).send({
     status: "success",
@@ -15,11 +25,6 @@ exports.getAllDevices = (req, res) => {
 exports.getDevice = (req, res) => {
   const { id } = req.params;
   const device = devices.find((device) => device.id === id * 1);
-  if (!device)
-    return res.status(404).send({
-      status: "fail",
-      message: "Invalid device ID",
-    });
 
   res.status(200).send({
     status: "success",
@@ -30,11 +35,6 @@ exports.getDevice = (req, res) => {
 exports.updateDevice = (req, res) => {
   const id = req.params.id;
   const device = devices.find((device) => device.id === id * 1);
-  if (!device)
-    return res.status(400).json({
-      status: "fail",
-      message: "Invalid device ID",
-    });
 
   res.status(200).json({
     status: "success",
