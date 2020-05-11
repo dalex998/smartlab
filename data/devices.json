@@ -1,1 +1,46 @@
-[{"id":1,"model":"iPhone 6s","buyPrice":200,"sellPrice":250,"buyDate":"2020-01-01","sellDate":"2020-01-23","buyFrom":25,"sellTo":32,"details":"LCD broken","partsUsed":[25,33,55],"images":["img-1.jpg","img-2.jpg"]},{"id":2,"model":"iPhone 8","buyPrice":200,"sellPrice":250,"buyDate":"2020-01-20","sellDate":"2020-03-25","buyFrom":24,"sellTo":33,"details":"LCD broken","partsUsed":[55,1,23],"images":["img-3.jpg","img-4.jpg"]},{"id":3,"model":"iPhone X","buyPrice":500,"sellPrice":590,"buyDate":"2020-01-20","sellDate":"2020-03-26","buyFrom":24,"sellTo":22,"details":"LCD broken","partsUsed":[51,13,44],"images":["img-3.jpg","img-4.jpg"]},{"id":4,"phone":{"model":"iphone 8","buyAt":400}},{"id":5,"model":"iphone 8","buyAt":400},{"id":6,"model":"iphone 8","buyAt":400},{"id":7,"model":"iphone 8","buyAt":400},{"id":8,"model":"iphone 8","buyAt":400}]
+[
+  {
+    "id": 1,
+    "model": "iPhone 6s",
+    "buyPrice": 200,
+    "sellPrice": 250,
+    "buyDate": "2020-01-01",
+    "sellDate": "2020-01-23",
+    "buyFrom": 25,
+    "sellTo": 32,
+    "details": "LCD broken",
+    "partsUsed": [25, 33, 55],
+    "images": ["img-1.jpg", "img-2.jpg"]
+  },
+  {
+    "id": 2,
+    "model": "iPhone 8",
+    "buyPrice": 200,
+    "sellPrice": 250,
+    "buyDate": "2020-01-20",
+    "sellDate": "2020-03-25",
+    "buyFrom": 24,
+    "sellTo": 33,
+    "details": "LCD broken",
+    "partsUsed": [55, 1, 23],
+    "images": ["img-3.jpg", "img-4.jpg"]
+  },
+  {
+    "id": 3,
+    "model": "iPhone X",
+    "buyPrice": 500,
+    "sellPrice": 590,
+    "buyDate": "2020-01-20",
+    "sellDate": "2020-03-26",
+    "buyFrom": 24,
+    "sellTo": 22,
+    "details": "LCD broken",
+    "partsUsed": [51, 13, 44],
+    "images": ["img-3.jpg", "img-4.jpg"]
+  },
+  { "id": 4, "phone": { "model": "iphone 8", "buyAt": 400 } },
+  { "id": 5, "model": "iphone 8", "buyAt": 400 },
+  { "id": 6, "model": "iphone 8", "buyAt": 400 },
+  { "id": 7, "model": "iphone 8", "buyAt": 400 },
+  { "id": 8, "model": "iphone 8", "buyAt": 400 }
+]

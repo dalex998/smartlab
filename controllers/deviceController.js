@@ -14,6 +14,15 @@ exports.checkId = (req, res, next, val) => {
   next();
 };
 
+exports.checkBody = (req, res, next) => {
+  if (!req.body.model || !req.body.buyPrice)
+    return res.status(400).json({
+      status: "fail",
+      message: "invalid body, missing name or buyPrice",
+    });
+  next();
+};
+
 exports.getAllDevices = (req, res) => {
   res.status(200).send({
     status: "success",

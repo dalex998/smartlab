@@ -8,7 +8,7 @@ router.param("id", deviceController.checkId);
 router
   .route("/")
   .get(deviceController.getAllDevices)
-  .post(deviceController.createDevice);
+  .post(deviceController.checkBody, deviceController.createDevice);
 
 router
   .route("/:id")
